@@ -7,24 +7,24 @@ import MapaDorado from '../Components/MapaDorado'
 export const Home = () => {
   return (
     <>
-      <header className='bg-[#f88acc] flex flex-row p-2'>
-        <section className='flex flex-col gap-4 w-1/2'>
-          <h1 className='font-semibold text-[5vw]'>Mi Mundo de Patas</h1>
-          <h3 className='font-semibold text-[2vw]'>Mascotitas Pet Shop</h3>
+      <header className='bg-[#f88acc] sm:w-full flex flex-col sm:flex-row gap-4 p-2'>
+        <section className='flex flex-col gap-4 w-full sm:w-1/2'>
+          <h1 className='font-semibold text-[4vh] sm:text-[5vw]'>Mi Mundo de Patas</h1>
+          <h3 className='font-semibold sm:text-[2vw] text-[2vh]'>Mascotitas Pet Shop</h3>
           <p className='px-3'>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </p>
         </section>
 
-        <section  className='flex w-1/2'>
+        <section  className='flex w-full sm:w-1/2'>
           <img className='rounded-xl w-full h-full' src="/images/medico-veterinario-05.jpg" alt="profile"  />
         </section>
       </header>
 
       <section className='bg-[#fcb0dd] flex flex-col gap-8 text-center py-4'>
-        <h2 className='text-[2vw] font-semibold'>NUESTROS PRODUCTOS</h2>
-        <p className='text-[1.5vw]'>Browse our selection of high-quality pet supplies and accessories to keep your furry friends happy and healthy.</p>
-        <section className='flex flex-row gap-8 justify-evenly items-center'>
+        <h2 className='sm:text-[2vw] text-[2vh] font-semibold'>NUESTROS PRODUCTOS</h2>
+        <p className='text-[1.5vh] sm:text-[1.5vw]'>Browse our selection of high-quality pet supplies and accessories to keep your furry friends happy and healthy.</p>
+        <section className='flex flex-col sm:flex-row gap-8 justify-evenly items-center'>
           <div className='flex flex-col' >
             <img src="/images/logo.jpg" alt="img" width={200} />
             <h2>Premium Dog Food</h2>
@@ -47,9 +47,9 @@ export const Home = () => {
       </section>
 
       <section className='bg-[#fcb0dd] flex flex-col gap-8 text-center py-4'>
-        <h2 className='text-[2vw] font-semibold'>SERVICIOS</h2>
-        <p className='text-[1.5vw]'>From routine check-ups to specialized treatments, our experienced veterinarians are dedicated to providing comprehensive care for your pets.</p>
-        <section className='flex flex-row gap-8 justify-evenly items-center'>
+        <h2 className='sm:text-[2vw] text-[2vh] font-semibold'>SERVICIOS</h2>
+        <p className='text-[1.5vh] sm:text-[1.5vw]'>From routine check-ups to specialized treatments, our experienced veterinarians are dedicated to providing comprehensive care for your pets.</p>
+        <section className='flex flex-col sm:flex-row gap-8 justify-evenly items-center'>
           <div className='flex flex-col'>
             <img src="/images/logo.jpg" alt="img" width={200} />
             <h2>Cirugias</h2>
@@ -72,9 +72,9 @@ export const Home = () => {
       </section>
 
       <section className='bg-[#fcb0dd] flex flex-col gap-8 text-center py-4'>
-        <h2 className='text-[2vw] font-semibold'>Meet Our Veterinarians</h2>
-        <p className='text-[1.5vw]'>Our team of experienced veterinarians is dedicated to providing the highest level of care for your pets.</p>
-        <section className='flex flex-row gap-8 justify-evenly items-center'>
+        <h2 className='sm:text-[2vw] text-[2vh] font-semibold'>Meet Our Veterinarians</h2>
+        <p className='text-[1.5vh] sm:text-[1.5vw]'>Our team of experienced veterinarians is dedicated to providing the highest level of care for your pets.</p>
+        <section className='flex flex-col sm:flex-row gap-8 justify-evenly items-center'>
           <div className='flex flex-col items-center px-4'>
             <img src="/images/logo.jpg" alt="img" width={200} />
             <h2 className='font-semibold'>Dr. Sarah Smith</h2>
@@ -97,9 +97,9 @@ export const Home = () => {
 
       </section>
 
-      <footer className='bg-[#f88acc] flex flex-row p-2 justify-around items-center'>
+      <footer className='bg-[#f88acc] flex flex-col gap-4 sm:gap-0 sm:flex-row p-2 sm:justify-around w-full sm:items-center'>
 
-        <section className='flex flex-col w-1/2'>
+        <section className='flex flex-col sm:w-1/2 '>
           <h2>SIGUENOS EN TODAS NUESTRAS REDES</h2>
           <section className='flex flex-row justify-evenly'>
             <Link>
@@ -122,7 +122,7 @@ export const Home = () => {
 
         </section>
 
-        <section className='flex flex-col w-1/2 gap-4'>
+        <section className='flex flex-col sm:w-1/2 gap-4'>
           <h2>VISITANOS EN:</h2>
           <MapPrimavera/>
          {/*  <Link  to={'https://maps.app.goo.gl/aAT3uUZjEqzJaZ1h7'}>La Primavera: Eleodoro Demetrio Coral N°125, Chiclayo.</Link> */}
