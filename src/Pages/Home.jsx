@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <>
       <header className='bg-[#f88acc] flex flex-row p-2'>
-        <section className='flex flex-col gap-4'>
+        <section className='flex flex-col gap-4 w-1/2'>
           <h1 className='font-semibold text-[5vw]'>Mi Mundo de Patas</h1>
           <h3 className='font-semibold text-[2vw]'>Mascotitas Pet Shop</h3>
           <p className='px-3'>
@@ -16,8 +16,8 @@ export const Home = () => {
           </p>
         </section>
 
-        <section>
-          <img className='rounded-xl' src="/public/images/medico-veterinario-05.jpg" alt="profile" width={2500} />
+        <section  className='flex w-1/2'>
+          <img className='rounded-xl w-full h-full' src="/images/medico-veterinario-05.jpg" alt="profile"  />
         </section>
       </header>
 
@@ -26,19 +26,19 @@ export const Home = () => {
         <p className='text-[1.5vw]'>Browse our selection of high-quality pet supplies and accessories to keep your furry friends happy and healthy.</p>
         <section className='flex flex-row gap-8 justify-evenly items-center'>
           <div className='flex flex-col' >
-            <img src="/public/images/logo.jpg" alt="img" width={200} />
+            <img src="/images/logo.jpg" alt="img" width={200} />
             <h2>Premium Dog Food</h2>
             <span>S/99.99</span>
             <button>Comprar</button>
           </div>
           <div className='flex flex-col' >
-            <img src="/public/images/logo.jpg" alt="img" width={200} />
+            <img src="/images/logo.jpg" alt="img" width={200} />
             <h2>Health and Beauty</h2>
             <span>S/99.99</span>
             <button>Comprar</button>
           </div>
           <div className='flex flex-col' >
-            <img src="/public/images/logo.jpg" alt="img" width={200} />
+            <img src="/images/logo.jpg" alt="img" width={200} />
             <h2>Pet Accessories</h2>
             <span>S/99.99</span>
             <button>Comprar</button>
@@ -51,19 +51,19 @@ export const Home = () => {
         <p className='text-[1.5vw]'>From routine check-ups to specialized treatments, our experienced veterinarians are dedicated to providing comprehensive care for your pets.</p>
         <section className='flex flex-row gap-8 justify-evenly items-center'>
           <div className='flex flex-col'>
-            <img src="/public/images/logo.jpg" alt="img" width={200} />
+            <img src="/images/logo.jpg" alt="img" width={200} />
             <h2>Cirugias</h2>
             <span>chancos,perros, michos</span>
             <button>Agendar</button>
           </div>
           <div className='flex flex-col'>
-            <img src="/public/images/logo.jpg" alt="img" width={200} />
+            <img src="/images/logo.jpg" alt="img" width={200} />
             <h2>Baño y corte</h2>
             <span>perros, michos</span>
             <button>Agendar</button>
           </div>
           <div className='flex flex-col'>
-            <img src="/public/images/logo.jpg" alt="img" width={200} />
+            <img src="/images/logo.jpg" alt="img" width={200} />
             <h2>Tratamientos</h2>
             <span>Desparacitacion,etc</span>
             <button>Agendar</button>
@@ -76,19 +76,19 @@ export const Home = () => {
         <p className='text-[1.5vw]'>Our team of experienced veterinarians is dedicated to providing the highest level of care for your pets.</p>
         <section className='flex flex-row gap-8 justify-evenly items-center'>
           <div className='flex flex-col items-center px-4'>
-            <img src="/public/images/logo.jpg" alt="img" width={200} />
+            <img src="/images/logo.jpg" alt="img" width={200} />
             <h2 className='font-semibold'>Dr. Sarah Smith</h2>
             <span>Veterinarian</span>
             <span>Dr. Smith has over 10 years of experience in veterinary medicine, specializing in small animal care.</span>
           </div>
           <div className='flex flex-col items-center px-4'>
-            <img src="/public/images/logo.jpg" alt="img" width={200} />
+            <img src="/images/logo.jpg" alt="img" width={200} />
             <h2 className='font-semibold'>Dr. David Johnson</h2>
             <span>Veterinarian</span>
             <span>Dr. Johnson has been practicing veterinary medicine for over 15 years, with a focus on preventive care and animal wellness.</span>
           </div>
           <div className='flex flex-col items-center px-4'>
-            <img src="/public/images/logo.jpg" alt="img" width={200} />
+            <img src="/images/logo.jpg" alt="img" width={200} />
             <h2 className='font-semibold'>Dr. Mia Lee</h2>
             <span>Veterinarian</span>
             <span>Dr. Lee is a recent graduate with a passion for animal behavior and holistic pet care.</span>
@@ -103,19 +103,19 @@ export const Home = () => {
           <h2>SIGUENOS EN TODAS NUESTRAS REDES</h2>
           <section className='flex flex-row justify-evenly'>
             <Link>
-              <img src="/public/images/Facebook.svg" alt="Facebook" width={50} />
+              <img src="/images/Facebook.svg" alt="Facebook" width={50} />
             </Link>
 
             <Link>
-              <img src="/public/images/Twitter.svg" alt="Twitter" width={50} />
+              <img src="/images/Twitter.svg" alt="Twitter" width={50} />
             </Link>
 
             <Link>
-              <img src="/public/images/insta.svg" alt="insta" width={50} />
+              <img src="/images/insta.svg" alt="insta" width={50} />
             </Link>
 
             <Link>
-              <img src="/public/images/tiktok.svg" alt="tiktok" width={50} />
+              <img src="/images/tiktok.svg" alt="tiktok" width={50} />
             </Link>
           </section>
 
