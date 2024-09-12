@@ -1,6 +1,6 @@
 import React from 'react'
 
-import foodArray from '/src/food.json'
+import foodArray from './../food.json'
 import { Card } from './Card';
 
 

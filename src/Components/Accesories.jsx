@@ -1,5 +1,5 @@
 
-import accsArray from '/src/accs.json'
+import accsArray from './../accs.json'
 import { Card } from './Card';
 
 

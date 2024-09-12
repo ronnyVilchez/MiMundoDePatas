@@ -1,5 +1,5 @@
 import React from 'react'
-import arrayHealt from '/src/healt.json'
+import arrayHealt from './../healt.json'
 import { Card } from './Card'
 
 export const Health = () => {
