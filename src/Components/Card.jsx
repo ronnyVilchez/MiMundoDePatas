@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const Card = ({id,imagen,nombre,descripcion,precio}) => {
+export const Card = ({imagen,nombre,descripcion,precio}) => {
   return (
-    <figure key={id} className='relative flex flex-col shadow-lg group ' >
+    <figure className='relative flex flex-col shadow-lg group ' >
     <h2 className='  w-full h-[3rem] flex items-center justify-center font-semibold text-center rounded-t-xl bg-[#5867FE] bg-opacity-55'>{nombre}</h2>
     <img className='' src={imagen} alt={nombre} />
     <figcaption className=' absolute bottom-[6rem] bg-yellow-200 invisible group-hover:visible w-full h-fit p-2  ' > {descripcion}</figcaption>

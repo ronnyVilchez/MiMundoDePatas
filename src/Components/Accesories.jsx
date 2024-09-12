@@ -14,7 +14,7 @@ export const Accesories = () => {
                     accsArray &&
                     accsArray.map((item) => (
                         <Card
-                            id={item.id}
+                            key={item.id}
                             nombre={item.nombre}
                             imagen={item.imagen}
                             descripcion={item.descripcion}
