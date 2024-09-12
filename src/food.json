@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "nombre": "Croquetas para Perro Adulto",
+      "precio": 29.99,
+      "descripcion": "Croquetas completas para perros adultos con alta proteína y vitaminas.",
+      "imagen": "https://picsum.photos/200/300?random=1",
+      "categoria": "Perro"
+    },
+    {
+      "id": 2,
+      "nombre": "Alimento Seco para Gato",
+      "precio": 25.49,
+      "descripcion": "Croquetas nutritivas para gatos con sabor a pollo y vitamina E.",
+      "imagen": "https://picsum.photos/200/300?random=2",
+      "categoria": "Gato"
+    },
+    {
+      "id": 3,
+      "nombre": "Snacks para Perro con Pollo",
+      "precio": 15.99,
+      "descripcion": "Snacks suaves y sabrosos para perros, ideales para adiestramiento.",
+      "imagen": "https://picsum.photos/200/300?random=3",
+      "categoria": "Perro"
+    },
+    {
+      "id": 4,
+      "nombre": "Comida Húmeda para Gato",
+      "precio": 12.99,
+      "descripcion": "Comida húmeda para gatos, rica en proteínas y sin granos.",
+      "imagen": "https://picsum.photos/200/300?random=4",
+      "categoria": "Gato"
+    },
+    {
+      "id": 5,
+      "nombre": "Croquetas para Cachorro",
+      "precio": 34.99,
+      "descripcion": "Alimento especial para cachorros, con nutrientes esenciales para su crecimiento.",
+      "imagen": "https://picsum.photos/200/300?random=5",
+      "categoria": "Perro"
+    },
+    {
+      "id": 6,
+      "nombre": "Galletas de Salmón para Gato",
+      "precio": 9.99,
+      "descripcion": "Galletas crujientes para gatos con salmón real y omega-3.",
+      "imagen": "https://picsum.photos/200/300?random=6",
+      "categoria": "Gato"
+    },
+    {
+      "id": 7,
+      "nombre": "Alimento para Conejo",
+      "precio": 18.50,
+      "descripcion": "Mezcla de vegetales y hierbas para conejos, rica en fibra.",
+      "imagen": "https://picsum.photos/200/300?random=7",
+      "categoria": "Conejo"
+    },
+    {
+      "id": 8,
+      "nombre": "Pellets para Hamster",
+      "precio": 14.75,
+      "descripcion": "Pellets nutritivos para hamsters con mezcla de semillas y vitaminas.",
+      "imagen": "https://picsum.photos/200/300?random=8",
+      "categoria": "Hamster"
+    },
+    {
+      "id": 9,
+      "nombre": "Comida para Aves",
+      "precio": 22.00,
+      "descripcion": "Semillas y frutas secas para aves, rica en antioxidantes.",
+      "imagen": "https://picsum.photos/200/300?random=9",
+      "categoria": "Ave"
+    },
+    {
+      "id": 10,
+      "nombre": "Comida para Peces Tropicales",
+      "precio": 19.99,
+      "descripcion": "Alimento especializado para peces tropicales con vitaminas y minerales.",
+      "imagen": "https://picsum.photos/200/300?random=10",
+      "categoria": "Peces"
+    }
+  ]
+  

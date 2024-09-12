@@ -1,0 +1,143 @@
+[
+    {
+      "id": "1",
+      "nombre": "Collar de Cuero",
+      "precio": "S/. 50.00",
+      "descripcion": "Collar resistente y elegante hecho de cuero genuino.",
+      "imagen": "https://picsum.photos/200/300?random=21"
+    },
+    {
+      "id": "2",
+      "nombre": "Correa Retráctil",
+      "precio": "S/. 70.00",
+      "descripcion": "Correa retráctil con mecanismo de freno para un control preciso.",
+      "imagen": "https://picsum.photos/200/300?random=22"
+    },
+    {
+      "id": "3",
+      "nombre": "Arnés Ajustable",
+      "precio": "S/. 55.00",
+      "descripcion": "Arnés ajustable para un ajuste perfecto y mayor comodidad.",
+      "imagen": "https://picsum.photos/200/300?random=23"
+    },
+    {
+      "id": "4",
+      "nombre": "Juguete de Peluche",
+      "precio": "S/. 30.00",
+      "descripcion": "Juguete suave y duradero, ideal para masticar y jugar.",
+      "imagen": "https://picsum.photos/200/300?random=24"
+    },
+    {
+      "id": "5",
+      "nombre": "Cama para Mascotas",
+      "precio": "S/. 80.00",
+      "descripcion": "Cama cómoda y acogedora para que tu mascota descanse.",
+      "imagen": "https://picsum.photos/200/300?random=25"
+    },
+    {
+      "id": "6",
+      "nombre": "Comedero Antideslizante",
+      "precio": "S/. 25.00",
+      "descripcion": "Comedero con base antideslizante para evitar derrames.",
+      "imagen": "https://picsum.photos/200/300?random=26"
+    },
+    {
+      "id": "7",
+      "nombre": "Bebedero Automático",
+      "precio": "S/. 45.00",
+      "descripcion": "Bebedero automático que proporciona agua fresca continuamente.",
+      "imagen": "https://picsum.photos/200/300?random=27"
+    },
+    {
+      "id": "8",
+      "nombre": "Bola Interactiva",
+      "precio": "S/. 35.00",
+      "descripcion": "Bola interactiva que estimula la mente y el cuerpo de tu mascota.",
+      "imagen": "https://picsum.photos/200/300?random=28"
+    },
+    {
+      "id": "9",
+      "nombre": "Escalera para Cama",
+      "precio": "S/. 60.00",
+      "descripcion": "Escalera segura y fácil de usar para que tu mascota suba a la cama.",
+      "imagen": "https://picsum.photos/200/300?random=29"
+    },
+    {
+      "id": "10",
+      "nombre": "Caja de Transporte",
+      "precio": "S/. 90.00",
+      "descripcion": "Caja de transporte resistente y ventilada para viajes seguros.",
+      "imagen": "https://picsum.photos/200/300?random=30"
+    },
+    {
+      "id": "11",
+      "nombre": "Juguete de Squeaker",
+      "precio": "S/. 28.00",
+      "descripcion": "Juguete con squeaker para mantener a tu mascota entretenida.",
+      "imagen": "https://picsum.photos/200/300?random=31"
+    },
+    {
+      "id": "12",
+      "nombre": "Bolsa de Transporte",
+      "precio": "S/. 75.00",
+      "descripcion": "Bolsa de transporte cómoda y práctica para llevar a tu mascota.",
+      "imagen": "https://picsum.photos/200/300?random=32"
+    },
+    {
+      "id": "13",
+      "nombre": "Rascador para Gatos",
+      "precio": "S/. 65.00",
+      "descripcion": "Rascador duradero para mantener las uñas de los gatos en buen estado.",
+      "imagen": "https://picsum.photos/200/300?random=33"
+    },
+    {
+      "id": "14",
+      "nombre": "Cinturón de Seguridad para Autos",
+      "precio": "S/. 50.00",
+      "descripcion": "Cinturón de seguridad para mantener a tu mascota segura durante los viajes en coche.",
+      "imagen": "https://picsum.photos/200/300?random=34"
+    },
+    {
+      "id": "15",
+      "nombre": "Porta Bolsas de Deshechos",
+      "precio": "S/. 20.00",
+      "descripcion": "Porta bolsas conveniente para recoger los deshechos de tu mascota.",
+      "imagen": "https://picsum.photos/200/300?random=35"
+    },
+    {
+      "id": "16",
+      "nombre": "Sombrero para Mascotas",
+      "precio": "S/. 40.00",
+      "descripcion": "Sombrero divertido y elegante para proteger a tu mascota del sol.",
+      "imagen": "https://picsum.photos/200/300?random=36"
+    },
+    {
+      "id": "17",
+      "nombre": "Botas para Mascotas",
+      "precio": "S/. 55.00",
+      "descripcion": "Botas protectoras para las patas de tu mascota en terrenos ásperos.",
+      "imagen": "https://picsum.photos/200/300?random=37"
+    },
+    {
+      "id": "18",
+      "nombre": "Collar con Placa de Identificación",
+      "precio": "S/. 65.00",
+      "descripcion": "Collar con placa para identificación personalizada de tu mascota.",
+      "imagen": "https://picsum.photos/200/300?random=38"
+    },
+    {
+      "id": "19",
+      "nombre": "Juguete para Masticar",
+      "precio": "S/. 30.00",
+      "descripcion": "Juguete resistente para masticar, ideal para mantener los dientes saludables.",
+      "imagen": "https://picsum.photos/200/300?random=39"
+    },
+    {
+      "id": "20",
+      "nombre": "Cinturón para Paseo",
+      "precio": "S/. 40.00",
+      "descripcion": "Cinturón ajustable para pasear a tu mascota con comodidad.",
+      "imagen": "https://picsum.photos/200/300?random=40"
+    }
+  ]
+  

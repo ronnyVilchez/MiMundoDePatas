@@ -1,13 +1,22 @@
 
 import React from 'react'
-import { Layout } from './Components/Layout'
 import { Home } from './Pages/Home'
+import { Route, Routes } from 'react-router-dom'
+import { Food } from './Components/Food'
+import { Health } from './Components/health'
+import { Accesories } from './Components/accesories'
+import { PageFood } from './Pages/PageFood'
+import { PageHealtf } from './Pages/PageHealtf'
+import { PageAccs } from './Pages/PageAccs'
 
 export default function App() {
   return (
-    <main className=' w-full h-screen'>
-      <Layout />
-      <Home />
-    </main>
+<Routes>
+  <Route path='/' element={<Home/>} />
+  <Route path='/food' element={<PageFood/>} />
+  <Route path='/health' element={<PageHealtf/>} />
+  <Route path='/accesories' element={<PageAccs/>} />
+</Routes>
+
   )
 }
