@@ -1,147 +1,111 @@
 import React, { useState } from 'react';
 
 export const VetAppointmentForm = () => {
-  const [formData, setFormData] = useState({
-    ownerName: '',
-    petName: '',
-    ownerPhone: '',
-    ownerEmail: '',
-    petAge: '',
-    petBreed: '',
-    appointmentReason: '',
-    description: '',
-    additionalInfo: '',
-  });
 
-  const [reasonDescription, setReasonDescription] = useState('');
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleReasonChange = (e) => {
-    const value = e.target.value;
-    setFormData({
-      ...formData,
-      appointmentReason: value,
-    });
-    
-    // Set the description based on the reason
-    switch (value) {
-      case 'bath':
-        setReasonDescription('Descripción para baño: Indique el tipo de baño y frecuencia.');
-        break;
-      case 'treatment':
-        setReasonDescription('Descripción para tratamiento: Indique el tipo de tratamiento y duración.');
-        break;
-      case 'surgery':
-        setReasonDescription('Descripción para cirugía: Proporcione detalles sobre la cirugía y cualquier preparación.');
-        break;
-      default:
-        setReasonDescription('');
-        break;
-    }
-  };
+  const [formData, setFormData] = useState({})
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form Data:', formData);
+    const form = Object.fromEntries(
+
+      new FormData(e.target)
+    )
+    setFormData(form)
+    console.log(form);
+    const mensaje = `
+    📋 *Datos de la Cita*:
+    👤 Dueño: ${form.dueño}
+    🐶 Mascota: ${form.mascota}
+    📞 Teléfono: ${form.telefono}
+    ✉️ Email: ${form.email}
+    📅 Edad de la Mascota: ${form.edad}
+    🐾 Raza: ${form.raza}
+    💬 Motivo: ${form.motivo}
+    📝 Descripción: ${form.descripcion}
+    ℹ️ Info Adicional: ${form.infoAd || 'N/A'}
+    `;
+
+    const url = `https://api.whatsapp.com/send?phone=955112484&text=${encodeURIComponent(mensaje)}`;
+    
+    window.open(url, '_blank'); // Abrir WhatsApp en una nueva pestaña
+ 
   };
 
   return (
-    <div className='p-4 max-w-lg mx-auto'>
+    <section className='p-4 max-w-lg mx-auto'>
       <h1 className='text-xl font-semibold mb-4'>Agendar Cita con el Veterinario</h1>
       <form onSubmit={handleSubmit} className='space-y-4'>
-        <div>
-          <label htmlFor='ownerName' className='block text-sm font-medium'>Nombre del Dueño</label>
+        <section>
+          <label htmlFor='dueno' className='block text-sm font-medium'>Nombre del Dueño</label>
           <input
             type='text'
-            id='ownerName'
-            name='ownerName'
-            value={formData.ownerName}
-            onChange={handleChange}
+            id='dueno'
+            name='dueño'
             className='mt-1 block w-full border border-gray-300 rounded-md p-2'
             required
           />
-        </div>
+        </section>
 
-        <div>
-          <label htmlFor='petName' className='block text-sm font-medium'>Nombre de la Mascota</label>
+        <section>
+          <label htmlFor='mascota' className='block text-sm font-medium'>Nombre de la Mascota</label>
           <input
             type='text'
-            id='petName'
-            name='petName'
-            value={formData.petName}
-            onChange={handleChange}
+            id='mascota'
+            name='mascota'
             className='mt-1 block w-full border border-gray-300 rounded-md p-2'
             required
           />
-        </div>
+        </section>
 
-        <div>
-          <label htmlFor='ownerPhone' className='block text-sm font-medium'>Teléfono del Dueño</label>
+        <section>
+          <label htmlFor='telefono' className='block text-sm font-medium'>Teléfono del Dueño</label>
           <input
             type='tel'
-            id='ownerPhone'
-            name='ownerPhone'
-            value={formData.ownerPhone}
-            onChange={handleChange}
+            id='telefono'
+            name='telefono'
             className='mt-1 block w-full border border-gray-300 rounded-md p-2'
             required
           />
-        </div>
+        </section>
 
-        <div>
-          <label htmlFor='ownerEmail' className='block text-sm font-medium'>Email del Dueño</label>
+        <section>
+          <label htmlFor='email' className='block text-sm font-medium'>Email del Dueño</label>
           <input
             type='email'
-            id='ownerEmail'
-            name='ownerEmail'
-            value={formData.ownerEmail}
-            onChange={handleChange}
+            id='email'
+            name='email'
             className='mt-1 block w-full border border-gray-300 rounded-md p-2'
             required
           />
-        </div>
+        </section>
 
-        <div>
-          <label htmlFor='petAge' className='block text-sm font-medium'>Edad de la Mascota</label>
+        <section>
+          <label htmlFor='edad' className='block text-sm font-medium'>Edad de la Mascota</label>
           <input
             type='number'
-            id='petAge'
-            name='petAge'
-            value={formData.petAge}
-            onChange={handleChange}
+            id='edad'
+            name='edad'
             className='mt-1 block w-full border border-gray-300 rounded-md p-2'
             required
           />
-        </div>
+        </section>
 
-        <div>
-          <label htmlFor='petBreed' className='block text-sm font-medium'>Raza de la Mascota</label>
+        <section>
+          <label htmlFor='raza' className='block text-sm font-medium'>Raza de la Mascota</label>
           <input
             type='text'
-            id='petBreed'
-            name='petBreed'
-            value={formData.petBreed}
-            onChange={handleChange}
+            id='raza'
+            name='raza'
             className='mt-1 block w-full border border-gray-300 rounded-md p-2'
             required
           />
-        </div>
+        </section>
 
-        <div>
-          <label htmlFor='appointmentReason' className='block text-sm font-medium'>Motivo de la Cita</label>
+        <section>
+          <label htmlFor='motivo' className='block text-sm font-medium'>Motivo de la Cita</label>
           <select
-            id='appointmentReason'
-            name='appointmentReason'
-            value={formData.appointmentReason}
-            onChange={handleReasonChange}
+            id='motivo'
+            name='motivo'
             className='mt-1 block w-full border border-gray-300 rounded-md p-2'
             required
           >
@@ -150,38 +114,29 @@ export const VetAppointmentForm = () => {
             <option value='treatment'>Tratamiento</option>
             <option value='surgery'>Cirugía</option>
           </select>
-        </div>
+        </section>
 
-        {reasonDescription && (
-          <div>
-            <p className='text-sm text-gray-600'>{reasonDescription}</p>
-          </div>
-        )}
-
-        <div>
-          <label htmlFor='description' className='block text-sm font-medium'>Descripción del Motivo</label>
+      
+        <section>
+          <label htmlFor='descripcion' className='block text-sm font-medium'>Descripción del Motivo</label>
           <textarea
-            id='description'
-            name='description'
-            value={formData.description}
-            onChange={handleChange}
+            id='descripcion'
+            name='descripcion'
             className='mt-1 block w-full border border-gray-300 rounded-md p-2'
             rows='4'
             required
           />
-        </div>
+        </section>
 
-        <div>
-          <label htmlFor='additionalInfo' className='block text-sm font-medium'>Información Adicional</label>
+        <section>
+          <label htmlFor='infoAd' className='block text-sm font-medium'>Información Adicional</label>
           <textarea
-            id='additionalInfo'
-            name='additionalInfo'
-            value={formData.additionalInfo}
-            onChange={handleChange}
+            id='infoAd'
+            name='infoAd'
             className='mt-1 block w-full border border-gray-300 rounded-md p-2'
             rows='4'
           />
-        </div>
+        </section>
 
         <button
           type='submit'
@@ -190,7 +145,7 @@ export const VetAppointmentForm = () => {
           Agendar Cita
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 
