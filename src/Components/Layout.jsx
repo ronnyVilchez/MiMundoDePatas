@@ -9,9 +9,10 @@ export const Layout = ({children}) => {
           <img className='rounded-full' src="/images/logo.jpg" alt="logo" width={60} height={60} />
         </Link>
         <section className='flex flex-row gap-8'>
-          <Link className='hover:bg-[#e955ae] p-2 rounded-full' to='/productos' >Productos</Link>
-          <Link className='hover:bg-[#e955ae] p-2 rounded-full ' to='/servicios'  >Servicios</Link>
-          <Link className='hover:bg-[#e955ae] p-2 rounded-full ' to='/nosotros' >Nosotros</Link>
+         {/*  <Link className='hover:bg-[#e955ae] p-2 rounded-full' to='/productos' >Productos</Link>
+          <Link className='hover:bg-[#e955ae] p-2 rounded-full ' to='/servicios'  >Servicios</Link> */}
+          <Link className='hover:bg-[#e955ae] p-2 rounded-full ' to='/' >Inicio</Link>
+          <Link className='hover:bg-[#e955ae] p-2 rounded-full ' to='/' >Mis pedidos</Link>
         </section>
       </nav>
       {children}

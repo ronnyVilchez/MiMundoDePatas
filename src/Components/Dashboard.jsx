@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 import MapPrimavera from '../Components/MapaPrimavera'
 import MapaDorado from '../Components/MapaDorado'
+import { CardOpcion } from './CardOpcion'
 
 export const Dashboard = () => {
     return (
@@ -26,21 +27,26 @@ export const Dashboard = () => {
                 <h2 className='sm:text-[2vw] text-[2vh] font-semibold'>NUESTROS PRODUCTOS</h2>
                 <p className='text-[1.5vh] sm:text-[1.5vw]'>Browse our selection of high-quality pet supplies and accessories to keep your furry friends happy and healthy.</p>
                 <section className='flex flex-col sm:flex-row gap-8 justify-evenly items-center'>
-                    <div className='flex flex-col gap-4' >
-                        <img className='rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-125' src="/images/logo.jpg" alt="img" width={200} />
-                        <h2 className='text-[1.3rem]'>Premium Dog Food</h2>
-                        <Link to={'/food'} className='bg-[#5867fe] hover:bg-[#8690fa] rounded-lg h-[3rem] items-center flex justify-center text-[1.2rem] font-semibold'>Ver más</Link>
-                    </div>
-                    <div className='flex flex-col gap-4' >
-                        <img className='rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-125' src="/images/logo.jpg" alt="img" width={200} />
-                        <h2 className='text-[1.3rem]'>Health and Beauty</h2>
-                        <Link to={'/health'} className='bg-[#5867FE] hover:bg-[#8690fa] rounded-lg h-[3rem] items-center flex justify-center text-[1.2rem] font-semibold'>Ver más</Link>
-                    </div>
-                    <div className='flex flex-col gap-4' >
-                        <img className='rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-125' src="/images/logo.jpg" alt="img" width={200} />
-                        <h2 className='text-[1.3rem]'>Pet Accessories</h2>
-                        <Link to={'/accesories'} className='bg-[#5867FE] hover:bg-[#8690fa] rounded-lg h-[3rem] items-center flex justify-center text-[1.2rem] font-semibold'>Ver más</Link>
-                    </div>
+
+                    <CardOpcion
+                        img={"/images/logo.jpg"}
+                        descrip={'Premium Dog Food'}
+                        link={'food'}
+                        linktext={'Ver más'}
+                    />
+
+                    <CardOpcion
+                        img={"/images/logo.jpg"}
+                        descrip={'Health and Beauty'}
+                        link={'health'}
+                        linktext={'Ver más'}
+                    />
+                    <CardOpcion
+                        img={"/images/logo.jpg"}
+                        descrip={'Pet Accessories'}
+                        link={'accesories'}
+                        linktext={'Ver más'}
+                    />
                 </section>
             </section>
 
@@ -48,24 +54,29 @@ export const Dashboard = () => {
                 <h2 className='sm:text-[2vw] text-[2vh] font-semibold'>SERVICIOS</h2>
                 <p className='text-[1.5vh] sm:text-[1.5vw]'>From routine check-ups to specialized treatments, our experienced veterinarians are dedicated to providing comprehensive care for your pets.</p>
                 <section className='flex flex-col sm:flex-row gap-8 justify-evenly items-center'>
-                    <div className='flex flex-col'>
-                        <img src="/images/logo.jpg" alt="img" width={200} />
-                        <h2>Cirugias</h2>
-                        <span>chancos,perros, michos</span>
-                        <button>Agendar</button>
-                    </div>
-                    <div className='flex flex-col'>
-                        <img src="/images/logo.jpg" alt="img" width={200} />
-                        <h2>Baño y corte</h2>
-                        <span>perros, michos</span>
-                        <button>Agendar</button>
-                    </div>
-                    <div className='flex flex-col'>
-                        <img src="/images/logo.jpg" alt="img" width={200} />
-                        <h2>Tratamientos</h2>
-                        <span>Desparacitacion,etc</span>
-                        <button>Agendar</button>
-                    </div>
+
+                    <CardOpcion
+                        img={"/images/logo.jpg"}
+                        descrip={'Cirugias'}
+                        link={'schedule'}
+                        spanDes={'chancos,perros, michos'}
+                        linktext={'Agendar'}
+                    />
+                    <CardOpcion
+                        img={"/images/logo.jpg"}
+                        descrip={'Baño y corte'}
+                        link={''}
+                        spanDes={'perros, michos'}
+                        linktext={'Agendar'}
+                    />
+                    <CardOpcion
+                        img={"/images/logo.jpg"}
+                        descrip={'Tratamientos'}
+                        link={''}
+                        spanDes={'Desparacitacion,etc'}
+                        linktext={'Agendar'}
+                    />
+                  
                 </section>
             </section>
 
@@ -73,6 +84,7 @@ export const Dashboard = () => {
                 <h2 className='sm:text-[2vw] text-[2vh] font-semibold'>Meet Our Veterinarians</h2>
                 <p className='text-[1.5vh] sm:text-[1.5vw]'>Our team of experienced veterinarians is dedicated to providing the highest level of care for your pets.</p>
                 <section className='flex flex-col sm:flex-row gap-8 justify-evenly items-center'>
+              
                     <div className='flex flex-col items-center px-4'>
                         <img src="/images/logo.jpg" alt="img" width={200} />
                         <h2 className='font-semibold'>Dr. Sarah Smith</h2>
