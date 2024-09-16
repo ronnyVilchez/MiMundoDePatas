@@ -9,7 +9,7 @@ export const Accesories = () => {
         <main className='w-full h-full p-10 bg-[#fcb0dd]'>
             <h2 className='text-center text-[2rem] font-semibold uppercase
             '>Productos de primera calidad</h2>
-            <section className='grid grid-cols-[18rem_18rem_18rem] place-content-evenly overflow-x-hidden gap-16 p-4'>
+            <section className=' sm:grid sm:grid-cols-[18rem_18rem_18rem] sm:place-content-evenly sm:overflow-x-hidden flex flex-col gap-12 sm:gap-16 p-4'>
                 {
                     accsArray &&
                     accsArray.map((item) => (
