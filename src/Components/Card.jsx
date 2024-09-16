@@ -13,7 +13,7 @@ export const Card = ({ imagen, nombre, descripcion, precio }) => {
         </figcaption>
       </figure>
       <span className='z-30 w-full h-[3rem] flex items-center justify-center font-semibold text-center bg-[#5867FE] bg-opacity-55'>
-        S/. {precio}
+        S/. {(precio).toFixed(2)}
       </span>
       <button className='z-30 w-full bg-orange-500 h-[3rem] rounded-b-xl hover:bg-orange-400'>
         Comprar

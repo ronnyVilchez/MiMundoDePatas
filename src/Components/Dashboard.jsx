@@ -65,14 +65,14 @@ export const Dashboard = () => {
                     <CardOpcion
                         img={"/images/logo.jpg"}
                         descrip={'Baño y corte'}
-                        link={''}
+                        link={'schedule'}
                         spanDes={'perros, michos'}
                         linktext={'Agendar'}
                     />
                     <CardOpcion
                         img={"/images/logo.jpg"}
                         descrip={'Tratamientos'}
-                        link={''}
+                        link={'schedule'}
                         spanDes={'Desparacitacion,etc'}
                         linktext={'Agendar'}
                     />

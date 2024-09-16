@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 import { PageFood } from './Pages/PageFood'
 import { PageHealtf } from './Pages/PageHealtf'
 import { PageAccs } from './Pages/PageAccs'
-import { VetAppointmentForm } from './Components/Form'
+import { PageSchedule } from './Pages/PageSchedule'
 
 export default function App() {
   return (
@@ -15,7 +15,7 @@ export default function App() {
       <Route path='/food' element={<PageFood />} />
       <Route path='/health' element={<PageHealtf />} />
       <Route path='/accesories' element={<PageAccs />} />
-      <Route path='/schedule' element={<VetAppointmentForm />} />
+      <Route path='/schedule' element={<PageSchedule />} />
     </Routes>
 
   )
