@@ -7,9 +7,9 @@ import { Card } from './Card';
 export const Food = () => {
 
     return (
-        <main className='w-full h-full p-10 bg-[#fcb0dd]'>
+        <main className='w-full font-Poppins h-full p-10 bg-[#fcb0dd]'>
             <h2 className='text-center text-[2rem] font-semibold uppercase
-            '>Productos de primera calidad</h2>
+            '>Selección Premium de Alimentos para Mascotas</h2>
             <section className=' sm:grid sm:grid-cols-[18rem_18rem_18rem] sm:place-content-evenly sm:overflow-x-hidden flex flex-col gap-12 sm:gap-16 p-4'>
                 {
                     foodArray &&
