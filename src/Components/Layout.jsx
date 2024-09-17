@@ -12,7 +12,7 @@ export const Layout = ({children}) => {
          {/*  <Link className='hover:bg-[#e955ae] p-2 rounded-full' to='/productos' >Productos</Link>
           <Link className='hover:bg-[#e955ae] p-2 rounded-full ' to='/servicios'  >Servicios</Link> */}
           <Link className='hover:bg-[#e955ae] p-2 rounded-full ' to='/' >Inicio</Link>
-          <Link className='hover:bg-[#e955ae] p-2 rounded-full ' to='/' >Mis pedidos</Link>
+          <Link className='hover:bg-[#e955ae] p-2 rounded-full ' to='/buy' >Mis pedidos</Link>
         </section>
       </nav>
       {children}

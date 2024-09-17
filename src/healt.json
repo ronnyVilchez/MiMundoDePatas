@@ -2,140 +2,140 @@
     {
       "id": "1",
       "nombre": "Shampoo Antipulgas",
-      "precio": "S/. 45.00",
+      "precio":  45.00,
       "descripcion": "Shampoo efectivo para eliminar pulgas y garrapatas en perros y gatos.",
       "imagen": "https://picsum.photos/200/300?random=1"
     },
     {
       "id": "2",
       "nombre": "Cepillo para Pelo de Mascotas",
-      "precio": "S/. 25.00",
+      "precio":  25.00,
       "descripcion": "Cepillo de cerdas suaves para el cuidado del pelaje de tu mascota.",
       "imagen": "https://picsum.photos/200/300?random=2"
     },
     {
       "id": "3",
       "nombre": "Condicionador Hidratante",
-      "precio": "S/. 40.00",
+      "precio":  40.00,
       "descripcion": "Condicionador para mantener el pelaje de tu mascota suave e hidratado.",
       "imagen": "https://picsum.photos/200/300?random=3"
     },
     {
       "id": "4",
       "nombre": "Vitaminas para Perros",
-      "precio": "S/. 60.00",
+      "precio":  60.00,
       "descripcion": "Suplemento vitamínico para mantener a los perros saludables y enérgicos.",
       "imagen": "https://picsum.photos/200/300?random=4"
     },
     {
       "id": "5",
       "nombre": "Limpieza de Oídos para Gatos",
-      "precio": "S/. 30.00",
+      "precio":  30.00,
       "descripcion": "Solución para limpiar y desinfectar los oídos de los gatos.",
       "imagen": "https://picsum.photos/200/300?random=5"
     },
     {
       "id": "6",
       "nombre": "Acondicionador Anticaída",
-      "precio": "S/. 50.00",
+      "precio":  50.00,
       "descripcion": "Acondicionador especializado para prevenir la caída excesiva del pelaje.",
       "imagen": "https://picsum.photos/200/300?random=6"
     },
     {
       "id": "7",
       "nombre": "Crema para Patas Secas",
-      "precio": "S/. 35.00",
+      "precio":  35.00,
       "descripcion": "Crema hidratante para aliviar y curar las patas secas y agrietadas.",
       "imagen": "https://picsum.photos/200/300?random=7"
     },
     {
       "id": "8",
       "nombre": "Spray Antiparásitos",
-      "precio": "S/. 55.00",
+      "precio":  55.00,
       "descripcion": "Spray para combatir parásitos externos en mascotas.",
       "imagen": "https://picsum.photos/200/300?random=8"
     },
     {
       "id": "9",
       "nombre": "Pasta Dental para Perros",
-      "precio": "S/. 28.00",
+      "precio":  28.00,
       "descripcion": "Pasta dental para mantener la salud bucal de los perros.",
       "imagen": "https://picsum.photos/200/300?random=9"
     },
     {
       "id": "10",
       "nombre": "Toallitas Limpiadoras",
-      "precio": "S/. 22.00",
+      "precio":  22.00,
       "descripcion": "Toallitas húmedas para limpiar rápidamente a tu mascota.",
       "imagen": "https://picsum.photos/200/300?random=10"
     },
     {
       "id": "11",
       "nombre": "Suplemento de Omega 3",
-      "precio": "S/. 70.00",
+      "precio":  70.00,
       "descripcion": "Suplemento con Omega 3 para una piel y pelaje saludables.",
       "imagen": "https://picsum.photos/200/300?random=11"
     },
     {
       "id": "12",
       "nombre": "Gel Antibacteriano",
-      "precio": "S/. 32.00",
+      "precio":  32.00,
       "descripcion": "Gel para limpiar y desinfectar las áreas delicadas de tu mascota.",
       "imagen": "https://picsum.photos/200/300?random=12"
     },
     {
       "id": "13",
       "nombre": "Protector Solar para Mascotas",
-      "precio": "S/. 45.00",
+      "precio":  45.00,
       "descripcion": "Protector solar para evitar quemaduras en mascotas con pelaje claro.",
       "imagen": "https://picsum.photos/200/300?random=13"
     },
     {
       "id": "14",
       "nombre": "Desodorante para Mascotas",
-      "precio": "S/. 38.00",
+      "precio":  38.00,
       "descripcion": "Desodorante especial para mantener a tu mascota fresca y libre de malos olores.",
       "imagen": "https://picsum.photos/200/300?random=14"
     },
     {
       "id": "15",
       "nombre": "Pasta para Desintoxicación",
-      "precio": "S/. 65.00",
+      "precio":  65.00,
       "descripcion": "Pasta desintoxicante para mejorar la salud general de tu mascota.",
       "imagen": "https://picsum.photos/200/300?random=15"
     },
     {
       "id": "16",
       "nombre": "Champú Hidratante para Gatos",
-      "precio": "S/. 42.00",
+      "precio":  42.00,
       "descripcion": "Champú especialmente formulado para la piel y pelaje de los gatos.",
       "imagen": "https://picsum.photos/200/300?random=16"
     },
     {
       "id": "17",
       "nombre": "Suplemento de Calcio",
-      "precio": "S/. 48.00",
+      "precio":  48.00,
       "descripcion": "Suplemento de calcio para fortalecer huesos y dientes en mascotas.",
       "imagen": "https://picsum.photos/200/300?random=17"
     },
     {
       "id": "18",
       "nombre": "Spray Hidratante",
-      "precio": "S/. 29.00",
+      "precio":  29.00,
       "descripcion": "Spray para mantener el pelaje de tu mascota suave e hidratado.",
       "imagen": "https://picsum.photos/200/300?random=18"
     },
     {
       "id": "19",
       "nombre": "Cortaúñas para Mascotas",
-      "precio": "S/. 40.00",
+      "precio":  40.00,
       "descripcion": "Cortaúñas de alta calidad para el cuidado de las garras de tu mascota.",
       "imagen": "https://picsum.photos/200/300?random=19"
     },
     {
       "id": "20",
       "nombre": "Serum Reparador de Pelaje",
-      "precio": "S/. 75.00",
+      "precio":  75.00,
       "descripcion": "Serum para reparar y revitalizar el pelaje dañado o seco.",
       "imagen": "https://picsum.photos/200/300?random=20"
     }

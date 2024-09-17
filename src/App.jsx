@@ -7,6 +7,7 @@ import { PageFood } from './Pages/PageFood'
 import { PageHealtf } from './Pages/PageHealtf'
 import { PageAccs } from './Pages/PageAccs'
 import { PageSchedule } from './Pages/PageSchedule'
+import { PageBuys } from './Pages/PageBuys'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Route path='/health' element={<PageHealtf />} />
       <Route path='/accesories' element={<PageAccs />} />
       <Route path='/schedule' element={<PageSchedule />} />
+      <Route path='/buy' element={<PageBuys />} />
     </Routes>
 
   )
