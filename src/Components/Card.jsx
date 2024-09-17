@@ -1,30 +1,31 @@
 import React, { useState, useEffect } from 'react';
 
 export const Card = ({ imagen, nombre, descripcion, precio }) => {
-  const [isInBuys, setIsInBuys] = useState(false);
+    const [isInBuys, setIsInBuys] = useState(false);
+  
+    useEffect(() => {
+      const savedBuys = localStorage.getItem('buys');
+      const buys = savedBuys ? JSON.parse(savedBuys) : [];
+      const itemExists = buys.some(item => item.nombre === nombre && item.precio === precio);
+      setIsInBuys(itemExists);
+    }, [nombre, precio]);
+  
+    const handleClick = () => {
+      const list = { nombre, precio };
+      const savedBuys = localStorage.getItem('buys');
+      const buys = savedBuys ? JSON.parse(savedBuys) : [];
+  
+      if (isInBuys) {
+        const newBuys = buys.filter(item => item.nombre !== nombre || item.precio !== precio);
+        localStorage.setItem('buys', JSON.stringify(newBuys));
+        setIsInBuys(false);
+      } else {
+        const newBuys = [...buys, list];
+        localStorage.setItem('buys', JSON.stringify(newBuys));
+        setIsInBuys(true);
+      }
+    };
 
-  useEffect(() => {
-    const savedBuys = localStorage.getItem('buys');
-    const buys = savedBuys ? JSON.parse(savedBuys) : [];
-    const itemExists = buys.some(item => item.nombre === nombre && item.precio === precio);
-    setIsInBuys(itemExists);
-  }, [nombre, precio]);
-
-  const handleClick = () => {
-    const list = { nombre, precio };
-    const savedBuys = localStorage.getItem('buys');
-    const buys = savedBuys ? JSON.parse(savedBuys) : [];
-
-    if (isInBuys) {
-      const newBuys = buys.filter(item => item.nombre !== nombre || item.precio !== precio);
-      localStorage.setItem('buys', JSON.stringify(newBuys));
-      setIsInBuys(false);
-    } else {
-      const newBuys = [...buys, list];
-      localStorage.setItem('buys', JSON.stringify(newBuys));
-      setIsInBuys(true);
-    }
-  };
 
   return (
     <section className='group flex flex-col z-1 text-white'>

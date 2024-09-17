@@ -6,7 +6,6 @@ import { Card } from './Card';
 
 export const Food = () => {
 
-    console.log(foodArray);
     return (
         <main className='w-full h-full p-10 bg-[#fcb0dd]'>
             <h2 className='text-center text-[2rem] font-semibold uppercase
