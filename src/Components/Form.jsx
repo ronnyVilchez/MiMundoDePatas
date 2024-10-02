@@ -35,7 +35,7 @@ export const VetAppointmentForm = () => {
   };
 
   return (
-    <main className="bg-[#f17fc4]">
+    <main className="className='w-full font-Poppins h-full p-10 bg-animated-gradient bg-gradient-to-r from-[#588157] to-[#ffeb3b] bg-size-400% min-h-screen animation-gradient">
       <section className='p-4 bg-[#fcb0dd] max-w-lg mx-auto'>
         <h1 className='text-xl font-semibold mb-4'>Agendar tu Cita, llena el siguiente formulario:</h1>
         <form ref={formRef} onSubmit={handleSubmit} className='space-y-4'>

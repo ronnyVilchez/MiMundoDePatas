@@ -38,7 +38,7 @@ export const Buys = () => {
     }
 
     return (
-        <section className='flex flex-col min-h-screen w-full items-center py-8 gap-4 bg-[#f17fc4]'>
+        <section className='flex flex-col min-h-screen w-full items-center py-8 gap-4 bg-animated-gradient bg-gradient-to-r from-[#588157] to-[#ffeb3b] bg-size-400% animation-gradient'>
             <section className='flex flex-col gap-4 bg-[#fcb0dd] py-8 px-12 rounded-lg'>
                 <h1 className='text-xl font-semibold mb-4 text-center'> Tu lista de compras </h1>
                 {(pedido.length >0) ?
@@ -55,7 +55,7 @@ export const Buys = () => {
                 }
                 <section className='flex flex-col gap-4 border-[#f17fc4]  border-[2px]  rounded-lg p-4'>
                     <h2 className='font-semibold text-center '>Total a Pagar: S/ {(pagar).toFixed(2)} </h2>
-                    <button onClick={paid} className='bg-[#f17fc4] py-1 w-full text-white rounded-lg'>Hacer pedido por WhatsApp</button>
+                    <button onClick={paid} className='bg-[#f17fc4] p-2 w-full text-white rounded-lg'>Hacer pedido por WhatsApp</button>
                 </section>
 
             </section>

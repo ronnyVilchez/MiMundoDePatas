@@ -41,7 +41,7 @@ export const Card = ({ imagen, nombre, descripcion, precio }) => {
       <span className='z-30 w-full h-[3rem] flex items-center justify-center font-semibold text-center bg-[#5867FE] bg-opacity-55'>
         S/. {(precio).toFixed(2)}
       </span>
-      <button onClick={handleClick} className={`${isInBuys ? 'bg-red-500 hover:bg-red-400' : 'bg-orange-500 hover:bg-orange-400'} z-30 w-full h-[3rem] rounded-b-xl `}>
+      <button onClick={handleClick} className={`${isInBuys ? 'bg-red-500 hover:bg-red-400' : 'bg-[#1abc9c] hover:bg-[#16a085]'} z-30 w-full h-[3rem] rounded-b-xl transition-all duration-300 transform hover:scale-105 uppercase font-bold `}>
         {isInBuys ? 'Remover' : 'Comprar'}
       </button>
     </section>

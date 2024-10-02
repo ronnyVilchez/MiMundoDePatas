@@ -6,10 +6,20 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily:{
-        "Poppins" : ["Poppins","sans-serif"]
-      }
-    },
+      fontFamily: {
+        "Poppins": ["Poppins", "sans-serif"]
+      },
+      animation: {
+        gradient: 'gradient 15s ease infinite', // Nombre de la animación
+      },
+      keyframes: {
+        gradient: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        }
+      },
+    }
   },
   plugins: [],
 }

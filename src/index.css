@@ -1,5 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* styles.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-animated-gradient {
+  background: linear-gradient(270deg, #b2e6b2, #fff3b2, #b2d8f0);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes walk {
+    0% {
+      transform: translateX(0); /* Comienza desde la posición original */
+      opacity: 0; /* Empieza invisible */
+    }
+    20% {
+      opacity: 1; /* Se vuelve visible */
+      transform: translateX(10px); /* Se mueve 10px hacia la derecha */
+    }
+    40% {
+      transform: translateX(20px); /* Se mueve 20px hacia la derecha */
+    }
+    60% {
+      transform: translateX(30px); /* Se mueve 30px hacia la derecha */
+    }
+    80% {
+      transform: translateX(20px); /* Se regresa un poco */
+    }
+    100% {
+      transform: translateX(0); /* Regresa a la posición original */
+      opacity: 0; /* Se vuelve invisible al final */
+    }
+  }
+  
+  .paw-print {
+    animation: walk 1.5s ease-in-out infinite; /* La duración de la animación */
+  }
+  
+  

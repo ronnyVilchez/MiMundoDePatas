@@ -27,19 +27,19 @@ const [modal, setModal ] = useState(false)
 
   return (
     <>
-      <nav className='bg-[#f88acc] font-Poppins z-40 w-full h-[5rem] sm:h-[10%] flex flex-row p-4 justify-between items-center sticky top-0 text-white sm:text-black'>
+      <nav className='bg-[#a2e1a2] font-Poppins z-40 w-full h-[5rem] sm:h-[10%] flex flex-row p-4 justify-between items-center sticky top-0 text-white sm:text-black'>
         <Link to='/'>
           <img className='rounded-full' src="/images/logo.jpg" alt="logo" width={60} height={60} />
         </Link>
         <button onClick={handleModal} className='flex sm:hidden '>
           <img src="/images/dogOpt.svg" alt="options" width={40} height={40} />
         </button>
-        <section className={`${modal ? 'flex flex-col absolute top-[5rem] right-0 px-4  py-2 rounded-b-lg  bg-[#f88acc]' : 'hidden'}   sm:flex sm:flex-row sm:gap-8 `}>
-          <Link className='hover:bg-[#e955ae] p-2 rounded-full ' to='/' >Inicio</Link>
-          <Link className='hover:bg-[#e955ae] p-2 rounded-full' to='/food' >Alimento</Link>
-          <Link className='hover:bg-[#e955ae] p-2 rounded-full ' to='/health'  >Salud</Link>
-          <Link className='hover:bg-[#e955ae] p-2 rounded-full ' to='/accesories'  >Accesorios</Link>
-          <Link className='hover:bg-[#e955ae] p-2 rounded-full ' to='/buy' >Mis pedidos <span className='bg-red-400 text-white p-1 rounded-full'>{spa}</span></Link>
+        <section className={`${modal ? 'flex flex-col absolute top-[5rem] right-0 px-4  py-2 rounded-b-lg  bg-[#a2e1a2]' : 'hidden'}   sm:flex sm:flex-row sm:gap-8 `}>
+          <Link className='hover:bg-[#1abc9c] p-2 rounded-full ' to='/' >Inicio</Link>
+          <Link className='hover:bg-[#1abc9c] p-2 rounded-full' to='/food' >Alimento</Link>
+          <Link className='hover:bg-[#1abc9c] p-2 rounded-full ' to='/health'  >Salud</Link>
+          <Link className='hover:bg-[#1abc9c] p-2 rounded-full ' to='/accesories'  >Accesorios</Link>
+          <Link className='hover:bg-[#1abc9c] p-2 rounded-full ' to='/buy' >Mis pedidos <span className='bg-red-400 text-white p-1 rounded-full'>{spa}</span></Link>
         </section>
       </nav>
       {children}
